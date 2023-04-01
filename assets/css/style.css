@@ -1,0 +1,53 @@
+.centrado,
+.tarjetContainer,
+.optionConteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  border: 1px solid black;
+}
+.principalConteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+.tarjetContainer {
+  flex-direction: column;
+  padding: 1em;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+}
+.tarjetContainer img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.tarjetContainer input {
+  margin-bottom: 0.4em;
+  border-radius: 5px;
+  border: none;
+}
+.tarjetContainer p {
+  margin-top: 0;
+  text-align: left;
+}
+.tarjetContainer button {
+  border-radius: 5px;
+}
+.tarjetContainer button:hover {
+  background-color: brown;
+}
+.optionConteiner {
+  flex-direction: column;
+  margin-left: 0;
+}
+.optionConteiner #colorOut {
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 20px;
+}

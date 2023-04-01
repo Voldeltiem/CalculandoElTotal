@@ -1,0 +1,54 @@
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    border: 1px solid black;
+}
+.principalConteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height:100vh;
+}
+
+.tarjetContainer{ 
+    @extend .centrado;
+    flex-direction: column;
+    padding: 1em;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    input{
+        margin-bottom: 0.4em;
+        border-radius: 5px;
+        border:none ;
+    }
+    p{
+        margin-top: 0;
+        text-align: left;
+    }
+    button{
+        border-radius: 5px;
+        &:hover{
+            background-color: brown;
+        }
+    }
+}
+.optionConteiner{
+    @extend .centrado;
+    flex-direction: column;
+    margin-left: 0;
+    #colorOut{
+        border: 1px solid black;
+        border-radius: 100px;
+        padding: 20px;
+    }
+}
